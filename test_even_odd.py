@@ -1,8 +1,14 @@
-a = input()
+"""
+Определение четных и нечетных цифр в числе
+"""
+a = input("Введите целое число: ")
+
+if a is not int:
+    a = input("Вы ввели неверное число, еще раз: ")
+
 a = int(a)
 
-even = 0
-odd = 0
+even, odd = 0, 0
 
 while a > 0:
     if a % 2 == 0:
@@ -11,4 +17,6 @@ while a > 0:
         odd += 1
     a = a // 10
 
-print("Even: %d, odd: %d" % (even, odd))
+# print("Четных: %d\nНечетных: %d" % (even, odd))
+print('-' * 12)
+print(f'Четных:   {even}\nНечетных: {odd}')

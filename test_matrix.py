@@ -18,11 +18,13 @@ for i in range(size):
 print(matrix)
 
 print("Что делает данный код?")
-pos = 2
-num = 10
+pos = 3
+num = 111
 
 # array_new = matrix[:pos] + [num] + matrix[pos:]
 # array_new = matrix[:pos] + [num]
 # array_new = matrix[:pos] + matrix[pos:]
-array_new = matrix[:pos] + matrix[pos:]
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+array_new = array[:pos] + [num] + array[pos:]
 print(array_new)
