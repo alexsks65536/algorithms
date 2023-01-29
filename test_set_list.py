@@ -19,6 +19,8 @@ def my_tuple(list_to):
 
 def my_set(list_to):
     _list = set(list_to)
+    for i in _list:
+        print(i)
     return _list
 
 
